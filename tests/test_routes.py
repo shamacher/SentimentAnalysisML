@@ -11,12 +11,12 @@ def client():
 
 
 def test_analyze_sentiment_positive(client):
-    response = client.post('/sentiment/analyze', json={'text': 'This is great'})
+    response = client.post('/sentiment/analyze', json={'text': 'This is great!'})
     assert response.status_code == 200
     assert response.json['sentiment'] == 'positive'
 
 
 def test_analyze_sentiment_negative(client):
-    response = client.post('/sentiment/analyze', json={'text': 'This is terrible'})
+    response = client.post('/sentiment/analyze', json={'text': 'This is terrible.'})
     assert response.status_code == 200
     assert response.json['sentiment'] == 'negative'
