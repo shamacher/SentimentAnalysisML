@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: flask-sentiment-api
-        image: cayuga24/flask-sentiment-api:latest
+        image: cayuga24/flask-sentiment-api:654e45070bde119288d3cf40c041ecc88294d4ce
         ports:
         - containerPort: 5000
